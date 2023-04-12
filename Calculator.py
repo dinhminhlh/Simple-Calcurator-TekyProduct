@@ -10,14 +10,14 @@ def press(num):
 
 #Hàm tính toán kết quả cuối cùng của phép tính
 def equalpress():
-    #Sử dụng try catch để xử lý lỗi như là chia cho 0
+    #Sử dụng try catch để xử lý lỗi như là chia cho 0 bằng hàm đánh giá toán học eval
     try:
         global expression
         #hàm eval đánh giá biểu thức
         #hàm str chuyển đổi nó thành kết quả ra string
         total = str(eval(expression))
         equation.set(total)
-        #khở tạo lại phép tính
+        #khởi tạo lại phép tính
         expression = ""
     except:
         equation.set(" error ")
