@@ -54,7 +54,7 @@ if __name__ == "__main__":
 
     # tạo các nút và chia nó vào grid layout
 
-    Clear = Button(gui, text='Clear', fg='#FFD154', bg='#3D3D3D',
+    Clear = Button(gui, text='AC', fg='#FFD154', bg='#3D3D3D',
                    command=clear, height=4, width=10)
     Clear.grid(row=2, column=0)
 
