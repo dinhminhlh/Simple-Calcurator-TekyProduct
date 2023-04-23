@@ -108,7 +108,7 @@ if __name__ == "__main__":
 
     button0 = Button(gui, text='0', fg='#FFD154', bg='#3D3D3D',
                      command=lambda: press(0), height=4, width=10)
-    button0.grid(row=6, column=0)
+    button0.grid(row=6, column=1)
 
     plus = Button(gui, text=' + ', fg='#FFD154', bg='#3D3D3D',
                   command=lambda: press("+"), height=4, width=10)
@@ -132,6 +132,6 @@ if __name__ == "__main__":
 
     Decimal = Button(gui, text='.', fg='#FFD154', bg='#3D3D3D',
                      command=lambda: press('.'), height=4, width=10)
-    Decimal.grid(row=6, column=1)
+    Decimal.grid(row=6, column=0)
 
     gui.mainloop()
